@@ -1,10 +1,11 @@
 #include <stdio.h>
+//还跑不起来ＴＴ
 int aa (const int a[], int i, int tg)
 {
 	int s = 0;
 	s = aa(a, i - 1, tg) + a[i];
-//	if (s != tg)
-//		s = aa(a, i - 1) - a[i];	
+	if (s != tg)
+		s = aa(a, i - 1) - a[i];	
 	return s;
 }	
 int bb (const int a[], int i, int tg)
